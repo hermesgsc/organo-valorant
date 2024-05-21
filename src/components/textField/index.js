@@ -5,7 +5,7 @@ const textField = (props) => {
     return (
         <div className="text-field">
         <label>{props.label}</label>
-        <input placeholder={modifiedPlaceholder}/>
+        <input required={props.mandatory} placeholder={modifiedPlaceholder}/>
         </div>
     );
 };
