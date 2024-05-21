@@ -5,8 +5,8 @@ const TextField = (props) => {
 
   const modifiedPlaceholder = `${props.placeholder}...`;
   
-  const whenTyped = (event) => {
-    props.whenChanged(event.target.value)
+  const onTyped = (event) => {
+    props.onChanged(event.target.value)
    
   };
 
@@ -15,7 +15,7 @@ const TextField = (props) => {
       <label>{props.label}</label>
       <input
         value={props.stringValue}
-        onChange={whenTyped}
+        onChange={onTyped}
         required={props.mandatory}
         placeholder={modifiedPlaceholder}
       />
