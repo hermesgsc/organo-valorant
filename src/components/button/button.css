@@ -1,0 +1,18 @@
+/* Button.css */
+
+.container-button {
+    background-color: #FF5252;
+    color: white;
+    border-radius: 3px;
+    font-weight: 700;
+    font-size: 24px;
+    padding: 18px 50px;
+    border: none; 
+    cursor: pointer;
+    margin-top: 32px;
+    transition: box-shadow,  0.5s ease;
+}
+.slide:hover,
+.slide:focus {
+    box-shadow: inset 300px 0 0 0 #0F1922;
+}

@@ -1,0 +1,12 @@
+.container-form {
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+.container-form form {
+    max-width: 80%;
+    background-color: #FEFFFF;
+    padding: 36px 64px;
+    box-shadow: 9px 8px 36px rgba(0, 0, 0, 0.10);
+}

@@ -1,0 +1,29 @@
+.dropdown-list {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 24px;
+
+}
+
+.dropdown-list label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 28px;
+}
+
+.dropdown-list select {
+    background-color: #F9F9F9;
+    color: #1F1F1E;
+    border: none;
+    width: 100%;
+    font-size: 24px;
+    padding: 24px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-list select:hover {
+    background-color: #ebebeb;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06)
+}
