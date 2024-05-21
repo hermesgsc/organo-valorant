@@ -3,7 +3,7 @@ import Banner from "./components/banner";
 import Form from "./components/form";
 import FunctionCategory from "./components/functioncategory";
 
-function App() {
+function App(props) {
   const [newAgents, setNewAgent] = useState([]);
 
   const toNewAgentAdded = (newAgent) => {
@@ -13,28 +13,36 @@ function App() {
 
   const agentFunction = [
     {
-      name:'Duelista',
+      name: "Duelista",
     },
 
     {
-      name:'Iniciador',
+      name: "Iniciador",
     },
 
     {
-      name:'Sentinela',
+      name: "Sentinela",
     },
 
     {
-      name:'Controlador',
-    }
-  ]
+      name: "Controlador",
+    },
+  ];
 
   return (
     <div>
       <Banner />
-      <Form agentFunction={agentFunction.map(agentFunction => agentFunction.name)} toNewAgentAdded={toNewAgentAdded} />
-      {agentFunction.map(agentFunction => <FunctionCategory key={agentFunction.name} nameFunction={agentFunction.name}/>)}
-      
+      <Form
+        agentFunction={agentFunction.map((agentFunction) => agentFunction.name)}
+        toNewAgentAdded={toNewAgentAdded}
+      />
+{agentFunction.map((functionItem) => (
+  <FunctionCategory
+    key={functionItem.name}
+    nameFunction={functionItem.name}
+    newAgents={newAgents.filter(agent => agent.agentFunctionList === functionItem.name)}
+  />
+))}
     </div>
   );
 }

@@ -7,14 +7,12 @@ import "./form.css";
 const Form = (props) => {
 
   const [agentName, setAgentName] = useState("");
-  const [image, setImage] = useState("");
-  const [agentFunctionList, setAgentFunction] = useState("");
+  const [agentFunctionList, setAgentFunction] = useState("Duelista");
 
   const whenSaved = (event) => {
     event.preventDefault();
     props.toNewAgentAdded({
       agentName,
-      image,
       agentFunctionList
     })
   };
@@ -29,14 +27,6 @@ const Form = (props) => {
           mandatory={true}
           label="Agente"
           placeholder="Digite o nome do agente"
-        />
-
-        <TextField
-          stringValue={image}
-          whenChanged={(stringValue) => setImage(stringValue)}
-          mandatory={true}
-          label="Imagem"
-          placeholder="Digite a URL da imagem"
         />
 
         <AgentFunctionDropdownList
