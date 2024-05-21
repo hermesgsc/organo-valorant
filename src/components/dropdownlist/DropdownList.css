@@ -8,7 +8,7 @@
 .dropdown-list label {
     display: block;
     margin-bottom: 8px;
-    font-size: 28px;
+    font-size: 20px;
 }
 
 .dropdown-list select {
@@ -16,7 +16,8 @@
     color: #1F1F1E;
     border: none;
     width: 100%;
-    font-size: 24px;
+    font-size: 18px;
+    font-weight: 500;
     padding: 24px;
     box-sizing: border-box;
     border-radius: 12px;

@@ -5,7 +5,7 @@
 .text-field label {
     display: block;
     margin-bottom: 8px;
-    font-size: 28px;
+    font-size: 20px;
 }
 
 .text-field input {
@@ -13,7 +13,7 @@
     color: #1F1F1E;
     border: none;
     width: 100%;
-    font-size: 24px;
+    font-size: 18px;
     padding: 24px;
     box-sizing: border-box;
     border-radius: 12px;
