@@ -5,7 +5,6 @@ import Button from "../button";
 import "./form.css";
 
 const Form = (props) => {
-  const agentFunction = ["Duelista", "Iniciador", "Sentinela", "Controlador"];
 
   const [agentName, setAgentName] = useState("");
   const [image, setImage] = useState("");
@@ -45,7 +44,7 @@ const Form = (props) => {
           whenChanged={stringValue => setAgentFunction(stringValue)}
           mandatory={true}
           label="Função"
-          items={agentFunction}
+          items={props.agentFunction}
         />
 
         <Button text="Criar card" />

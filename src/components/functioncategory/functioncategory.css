@@ -1,0 +1,13 @@
+.function-title {
+    text-align: center;
+    padding: 32px;
+    background-color: #111011;
+}
+
+.function-title h3 {
+    font-size: 32px;
+    border-bottom: 4px solid #FF5252;
+    display: inline-block;
+    color: white;
+    padding-bottom: 8px;
+}
