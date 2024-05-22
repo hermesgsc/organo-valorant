@@ -3,6 +3,7 @@ import { useState } from "react";
 import AgentFunctionDropdownList from "../dropdownlist";
 import Button from "../button";
 import "./form.css";
+import agents from "../agents";
 
 const Form = (props) => {
   const [agentName, setAgentName] = useState("");
@@ -10,6 +11,13 @@ const Form = (props) => {
 
   const onSaved = (event) => {
     event.preventDefault();
+    
+    const agent = agents.find(a => a.name.toLowerCase() === agentName.toLowerCase());
+    if (agent && agent.function !== agentFunctionList) {
+      alert("A função selecionada está incorreta para o agente escolhido.");
+      return;
+    }
+
     props.toNewAgentAdded({
       agentName,
       agentFunctionList
