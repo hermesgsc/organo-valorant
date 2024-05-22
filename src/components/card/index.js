@@ -1,6 +1,6 @@
 import React from 'react';
 import './card.css';
-import agents from '../agents'; // Importar a lista de agentes
+import agents from '../agents';
 
 const Card = ({ agentName }) => {
   const agent = agents.find((agent) => agent.name.toLowerCase() === agentName.toLowerCase());

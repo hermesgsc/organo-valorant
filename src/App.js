@@ -10,7 +10,6 @@ function App(props) {
   const toNewAgentAdded = (newAgent) => {
     setNewAgent((prevAgents) => [...prevAgents, newAgent]);
 
-    // Scroll to the corresponding FunctionCategory
     if (functionCategoryRefs.current[newAgent.agentFunctionList]) {
       functionCategoryRefs.current[newAgent.agentFunctionList].scrollIntoView({ behavior: 'smooth' });
     }

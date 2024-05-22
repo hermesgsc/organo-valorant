@@ -14,7 +14,7 @@ const Form = (props) => {
     
     const agent = agents.find(a => a.name.toLowerCase() === agentName.toLowerCase());
     if (agent && agent.function !== agentFunctionList) {
-      alert("A função selecionada está incorreta para o agente escolhido.");
+      alert("Error: Selecione a função correta do agente");
       return;
     }
 
