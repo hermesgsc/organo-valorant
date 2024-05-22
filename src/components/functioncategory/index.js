@@ -1,21 +1,22 @@
+import React, { forwardRef } from 'react';
 import Card from "../card";
-import "./functioncategory.css"
+import "./functioncategory.css";
 
-const FunctionCategory = (props) => {
+const FunctionCategory = forwardRef((props, ref) => {
   return (
-    <section className="function-title">
+    <section className="function-title" ref={ref}>
       <h3>{props.nameFunction}</h3>
       <div className="card-agents">
         {props.newAgents.map(newAgent => (
           <Card
             key={newAgent.agentName}
             agentName={newAgent.agentName}
-            image={newAgent.image}
+            agentFunction={newAgent.agentFunctionList}
           />
         ))}
       </div>
     </section>
   );
-};
+});
 
 export default FunctionCategory;

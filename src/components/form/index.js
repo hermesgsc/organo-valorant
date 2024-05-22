@@ -5,7 +5,6 @@ import Button from "../button";
 import "./form.css";
 
 const Form = (props) => {
-
   const [agentName, setAgentName] = useState("");
   const [agentFunctionList, setAgentFunction] = useState("Duelista");
 
@@ -14,7 +13,7 @@ const Form = (props) => {
     props.toNewAgentAdded({
       agentName,
       agentFunctionList
-    })
+    });
   };
 
   return (
@@ -28,7 +27,6 @@ const Form = (props) => {
           label="Agente"
           placeholder="Digite o nome do agente"
         />
-
         <AgentFunctionDropdownList
           stringValue={agentFunctionList}
           onChanged={stringValue => setAgentFunction(stringValue)}
@@ -36,7 +34,6 @@ const Form = (props) => {
           label="Função"
           items={props.agentFunction}
         />
-
         <Button text="Criar card" />
       </form>
     </section>

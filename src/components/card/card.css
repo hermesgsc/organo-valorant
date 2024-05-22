@@ -1,6 +1,8 @@
 .card {
     width: 280px;
-    
+    border-radius: 13px 13px 13px 13px;
+    background-color: #fff;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
 }
 
 .card .header {
@@ -12,27 +14,27 @@
     border-radius: 50%;
     position: relative;
     bottom: -50px;
+    background-color: #111011;
+    box-shadow: 2px 2px 16px 5px rgba(0, 0, 0, 0.5);
 }
 
 .card .footer {
-    background: #FFFFFF;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
+    gap: 10px;
     border-radius: 0px 0px 10px 10px;
-    padding-top: 90px;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
 }
 
 .card .footer h4 {
-    color: #FF5252;
-    font-size: 18px;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 24px;
     line-height: 22px;
-    font-weight: bold;
-    margin-bottom: 8px;
+    margin-top: 60px;
+    margin-bottom: 0px;
 }
 
-.card .footer h5 {
+.card .footer label {
+    padding-top: 20px;
     font-size: 18px;
     line-height: 22px;
     color: #212121;
-    padding: 0 16px;
 }
